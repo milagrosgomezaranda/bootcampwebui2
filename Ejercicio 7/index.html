@@ -1,0 +1,28 @@
+<!--Gómez Aranda, María de los Milagros-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 7</title>
+</head>
+<body>
+	<h1 id="encabezado">GLOBANT - Bootcamp WEB UI</h1>
+	<script>
+		encabezado.style.color="#21dd37";
+		const personas=["Marta","Jose","Micaela"];
+		personas.push("Sofia "," Agustin "," Sebastian ")
+		alert("Este es el ejercicio 7", personas);
+
+		document.write("La lista es: " +personas+"<br>"+"La cantidad de elementos de la Lista es: "+personas.length+"<br>"+"<br>")
+		const most = gente();
+
+		function gente(){
+			for(i=0;i<=personas.length-1;i++){
+				document.write("La persona: " +personas[i]+","+" se encuentra en la posición "+i+" <br> ");
+			}
+		}
+
+
+	</script>
+</body>
+</html>

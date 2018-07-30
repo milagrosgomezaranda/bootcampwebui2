@@ -1,0 +1,43 @@
+<!--Gómez Aranda, María de los Milagros-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	Ejercicio 6 </title>
+</head>
+<body>
+	<h1 id="encabezado" class=""> GLOBANT - BootCamp WEB UI </h1>
+	<ol id="lista"> <!--lista ordenada-->
+		<li id="primero"> First Element</li>
+		<li> Second Element</li>
+	</ol>
+	<button id="bot"> This is a Button </button>
+	
+
+	<script>
+		const primero = document.getElementById("primero");
+		primero.innerHTML = "New text <i> This is a text </i>";
+		const encabezado = document.getElementById("encabezado");
+		encabezado.style.color="#21dd37";
+		encabezado.style.maxHeight="100px";
+		encabezado.style.marginLeft = "10px";
+		encabezado.style.fontFamily="Arial,sans-serif";
+		lista.style.fontFamily="times, serif";
+		lista.style.color="#ea81c9";
+		bot.style.borderBottomRightRadius="3px";
+		bot.style.borderBottomLeftRadius="3px";
+		bot.style.marginLeft="25px";
+		(function(){
+			const nose = function(e){
+				alert("No sé qué es esto pero, hola!");
+				console.log("Esto es un evento de tipo:" +e.type);
+				console.log("Además esto se encuentra en: " +e.target);
+			};
+		const buttonn = document.getElementById("bot");
+		buttonn.addEventListener("click", nose);
+		}())
+	</script>
+	
+</body>
+</html>
